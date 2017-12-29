@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import './styles/App.css';
+import '../styles/App.css';
+
+//components==================================
+import EarthquakeInfo from './EarthquakeInfo.js';
+import EarthquakeList from './EarthquakeList.js';
 
 class App extends Component {
   render() {
@@ -8,6 +12,8 @@ class App extends Component {
         <div className="tile">
           <div className="my-header">EarthQuakes!</div>
         </div>
+        <EarthquakeInfo />
+        <EarthquakeList />
       </div>
     );
   }
